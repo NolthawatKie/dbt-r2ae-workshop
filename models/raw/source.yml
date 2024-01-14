@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: snowflake
+    schema: src
+    tables:
+    - name: src_listings
+    - name: src_hosts
+    - name: src_reviews

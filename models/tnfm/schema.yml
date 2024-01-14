@@ -1,0 +1,29 @@
+version: 2
+
+models:
+    - name: dim_hosts
+      description: "dim_hosts generic test cases"
+      columns:
+          - name: host_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+
+    - name: dim_listings
+      description: "dim_listings generic test cases"
+      columns:
+          - name: listing_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
+
+    - name: fct_reviews
+      description: "fct_reviews generic test cases"
+      columns:
+          - name: review_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
